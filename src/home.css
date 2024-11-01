@@ -1,0 +1,667 @@
+.container-fluid {
+    padding: 0;
+}
+
+#container{
+  width: 90%;
+  justify-content: center;
+  position: sticky;
+}
+.links{
+  text-decoration: none;
+}
+.navigations{
+  text-align: justify;
+  width: 100%;
+  justify-content: center;
+}
+.navbar{
+  height: 5em;
+  font-size: 16px;
+  width: 100%;
+}
+.nav-link{
+  color: #4169E1;
+}
+.first {
+    display: flex;
+    align-items: center;
+    height: 30em;
+    padding-right: 3em;
+}
+
+.second {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 30em;
+    padding-left: 15em;
+    padding-right: 3em;
+}
+.members{
+  width: 80%;
+  padding-left: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+img{
+  width: 25em;
+  height: 35em;
+}
+.card{
+  width: 27em;
+  height: 40em;
+  margin-bottom: 2em;
+}
+.svg img {
+    max-width: 100%;
+    height: auto;
+}
+.svg2 svg{
+    width: 100%;
+    height: auto;
+    margin-top: -24em;
+}
+.mission {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.missionheader{
+    color: #4169E1;
+    padding: 1em 0em;
+}
+
+.objective{
+    flex: 1;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    justify-content: center;
+    /* margin-top: -6em;
+    margin-left: 13em; */
+}
+.objective h1{
+    color: #4169E1;
+    padding: 1em 0em;
+}
+.stories h1{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #4169E1;
+}
+.videos{
+    padding: 1em;
+    width: 100%;
+}
+.meet{
+  margin-top: 30em;
+}
+a{
+  text-decoration: none;
+}
+.meet h1{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: #4169E1;
+}
+
+.elab h1{
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #4169E1;
+}
+.elab p{
+  width: 90%;
+  text-align: center;
+  font-size: 16px;
+}
+.card1{
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  /* background-color: rebeccapurple; */
+}
+.card1 img{
+  height: 250px;
+  width: 300px;
+}
+.card1 div{
+  background-color: #fff;
+  width: 250px;
+  position: relative;
+  bottom: 80px;
+  left: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.imagecards{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns:1fr 1fr  1fr;
+}
+
+.elab{
+  left: 100px;
+  top: 200px;
+  position: relative;
+  width: 92%;
+}
+
+.elab .cards1{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.elab .cards1 .card1 div{
+  background-color: #fff;
+  opacity: 1;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.elab .cards1 .card1 div span{
+  text-align: center;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: #4169E1;
+  border-radius: 50%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 100px;
+  top: 15px;
+}
+
+.cardteam{
+  /* background-color: rebeccapurple; */
+}
+.cardteam img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.cardteam div{
+  /* background-color: red; */
+  width: 50%;
+  position: relative;
+  left: 30px;
+  margin: 20px;
+}
+.card1 div p{
+  text-align: left;
+  padding-left: 1.5em;
+  
+}
+ @keyframes animate-svg-fill-1 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .svg-elem-1 {
+    animation: animate-svg-fill-1 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.8s both;
+  }
+  
+  @keyframes animate-svg-fill-2 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(255, 255, 255);
+    }
+  }
+  
+  .svg-elem-2 {
+    animation: animate-svg-fill-2 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.9s both;
+  }
+  
+  @keyframes animate-svg-fill-3 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-3 {
+    animation: animate-svg-fill-3 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s both;
+  }
+  
+  @keyframes animate-svg-fill-4 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-4 {
+    animation: animate-svg-fill-4 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.1s both;
+  }
+  
+  @keyframes animate-svg-fill-5 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-5 {
+    animation: animate-svg-fill-5 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.2000000000000002s both;
+  }
+  
+  @keyframes animate-svg-fill-6 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-6 {
+    animation: animate-svg-fill-6 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.3s both;
+  }
+  
+  @keyframes animate-svg-fill-7 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-7 {
+    animation: animate-svg-fill-7 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.4000000000000001s both;
+  }
+  
+  @keyframes animate-svg-fill-8 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-8 {
+    animation: animate-svg-fill-8 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.5s both;
+  }
+  
+  @keyframes animate-svg-fill-9 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-9 {
+    animation: animate-svg-fill-9 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.6s both;
+  }
+  
+  @keyframes animate-svg-fill-10 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-10 {
+    animation: animate-svg-fill-10 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.7000000000000002s both;
+  }
+  
+  @keyframes animate-svg-fill-11 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-11 {
+    animation: animate-svg-fill-11 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.8s both;
+  }
+  
+  @keyframes animate-svg-fill-12 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-12 {
+    animation: animate-svg-fill-12 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1.9000000000000001s both;
+  }
+  
+  @keyframes animate-svg-fill-13 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-13 {
+    animation: animate-svg-fill-13 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2s both;
+  }
+  
+  @keyframes animate-svg-fill-14 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-14 {
+    animation: animate-svg-fill-14 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.1s both;
+  }
+  
+  @keyframes animate-svg-fill-15 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-15 {
+    animation: animate-svg-fill-15 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.2s both;
+  }
+  
+  @keyframes animate-svg-fill-16 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-16 {
+    animation: animate-svg-fill-16 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.3s both;
+  }
+  
+  @keyframes animate-svg-fill-17 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-17 {
+    animation: animate-svg-fill-17 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.4000000000000004s both;
+  }
+  
+  @keyframes animate-svg-fill-18 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-18 {
+    animation: animate-svg-fill-18 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.5s both;
+  }
+  
+  @keyframes animate-svg-fill-19 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-19 {
+    animation: animate-svg-fill-19 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.6s both;
+  }
+  
+  @keyframes animate-svg-fill-20 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-20 {
+    animation: animate-svg-fill-20 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.7s both;
+  }
+  
+  @keyframes animate-svg-fill-21 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-21 {
+    animation: animate-svg-fill-21 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.8s both;
+  }
+  
+  @keyframes animate-svg-fill-22 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-22 {
+    animation: animate-svg-fill-22 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 2.9000000000000004s both;
+  }
+  
+  @keyframes animate-svg-fill-23 {
+    0% {
+      fill: transparent;
+    }
+  
+    100% {
+      fill: rgb(27, 12, 26);
+    }
+  }
+  
+  .svg-elem-23 {
+    animation: animate-svg-fill-23 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) 3s both;
+  }
+  
+  @media (min-width: 992px) {
+    .videos .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .videos .col-md-6 {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+    .svg{
+      width: 40%;
+      margin-top: 6em;
+    }
+    .second{
+      width: 100%;
+    }
+    .svg2{
+      width: 40%;
+      position: relative;
+      margin-top: 20em;
+    }
+    .objective{
+      width: 60%;
+    }
+    #container{
+      width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .videos .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+    h1{
+      text-align: center;
+    }
+    .stories{
+      width: 100%;
+      padding: 0em;
+      margin: 0em;
+    }
+    .videos .col-md-6 {
+        flex: 1 1 45%;
+        max-width: 100%;
+    }
+    .svg {
+      max-width: 300px;
+      margin: 0em;
+      display: none;
+    }
+    .svg2{
+       max-width: 300px;
+        margin: 0em;
+        padding: 0em;
+        display: none;
+    }
+    .first{
+      flex-wrap: wrap;
+      display: block;
+      width: 100%;
+      margin: 0em;
+      padding: 2em;
+      height: 18em;
+    }
+    .second{
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0em;
+      padding: 2em;
+      height: 21em;
+    }
+    .objective{
+      margin: 0em;
+      padding: 0em;
+      width: 100%;
+
+    }
+    #container{
+      width: 100%;
+      padding: 0em;
+      margin: 0em;
+    }
+    iframe{
+      width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .videos .col-md-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0em;
+        margin: 0em;
+    }
+    .svg {
+      max-width: 300px;
+      margin: 0em;
+      display: none;
+    }
+    .svg2{
+       max-width: 300px;
+        margin: 0em;
+        padding: 0em;
+        display: none;
+    }
+    .first{
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0em;
+      padding: 2em;
+    }
+    .second{
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0em;
+      padding: 2em;
+    }
+    .stories h1{
+      margin-top: 7em;
+    }
+    h1{
+      text-align: center;
+    }
+    .objective{
+      margin: 0em;
+      padding: 0em;
+      width: 100%;
+
+    }
+    #container{
+      width: 100%;
+      padding: 0em;
+      margin: 0em;
+    }
+    iframe{
+      width: 100%;
+    }
+}
