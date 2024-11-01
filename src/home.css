@@ -117,7 +117,7 @@ a{
 .elab h1{
     text-align: center;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
     color: #4169E1;
 }
 .elab p{
@@ -158,7 +158,7 @@ a{
 }
 
 .elab .cards1{
-  margin-top: 50px;
+  /* margin-top: 30px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -199,6 +199,7 @@ a{
   padding-left: 1.5em;
   
 }
+
  @keyframes animate-svg-fill-1 {
     0% {
       fill: transparent;
@@ -538,11 +539,12 @@ a{
     }
     .second{
       width: 100%;
+      /* padding-left: 10em; */
     }
     .svg2{
       width: 40%;
       position: relative;
-      margin-top: 20em;
+      margin-top: 24em;
     }
     .objective{
       width: 60%;
@@ -550,6 +552,20 @@ a{
     #container{
       width: 100%;
     }
+    .elab {
+      top: 200px;
+      /* margin-left: 10em; */
+      position: relative;
+      width: 92%;
+  }
+  .elab .cards1 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.meet{
+  margin-left: 0em;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -589,14 +605,14 @@ a{
       width: 100%;
       margin: 0em;
       padding: 2em;
-      height: 18em;
+      height: 13em;
     }
     .second{
       flex-wrap: wrap;
       width: 100%;
       margin: 0em;
       padding: 2em;
-      height: 21em;
+      height: 2em;
     }
     .objective{
       margin: 0em;
@@ -612,6 +628,104 @@ a{
     iframe{
       width: 100%;
     }
+    .elab h1{
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 0em;
+      color: #4169E1;
+  }
+  .elab p{
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+  }
+  .card1{
+    width: 300px;
+    height: 350px;
+    text-align: center;
+  }
+  .card1 img{
+    height: 250px;
+    width: 300px;
+  }
+  .card1 div{
+    background-color: #fff;
+    width: 250px;
+    position: relative;
+    bottom: 80px;
+    left: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0.7;
+  }
+  .imagecards{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns:1fr 1fr  1fr;
+  }
+  
+  .elab{
+    top: 200px;
+    margin-left: 2em;
+    position: relative;
+    width: 92%;
+  }
+  
+  .elab .cards1{
+    /* margin-top: 30px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+  .elab .cards1 .card1 div{
+    background-color: #fff;
+    opacity: 1;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .elab .cards1 .card1 div span{
+    text-align: center;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #4169E1;
+    border-radius: 50%;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 100px;
+    top: 15px;
+  }
+  .cardteam img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .cardteam div{
+    /* background-color: red; */
+    width: 50%;
+    position: relative;
+    left: 30px;
+    margin: 20px;
+  }
+  .card1 div p{
+    text-align: left;
+    padding-left: 1.5em;
+    
+  }
+  .meet{
+    margin-left: 0em;
+    padding: 0em;
+  }
+  .members {
+    width: 80%;
+    padding-left: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    /* justify-content: space-evenly; */
+}
 }
 
 @media (max-width: 767px) {
@@ -620,6 +734,9 @@ a{
         max-width: 100%;
         padding: 0em;
         margin: 0em;
+    }
+    .meet{
+      margin-left: 1.8em;
     }
     .svg {
       max-width: 300px;
@@ -668,11 +785,14 @@ a{
     }
     .card1 img{
       height: 250px;
-      width: 300px;
+      width: 100%;
+    }
+    .card1{
+      width: 90%;
     }
     .card1 div{
       background-color: #fff;
-      width: 250px;
+      width: 85%;
       position: relative;
       bottom: 80px;
       left: 25px;
@@ -745,8 +865,12 @@ a{
       width: 100%;
       display: block;
       margin: 0em;
-      padding-left: 2em;
+      padding-left: 0em;
       gap: 0px;
+    }
+    .members .card{
+      width: 94%;
+      height: auto;
     }
     h5{
       font-size: 13px;

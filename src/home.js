@@ -11,8 +11,26 @@ import treasure from "./assets/treasure.jpg"
 import launch from "./assets/launch.jpg"
 import print from "./assets/digital.jpg"
 import home from "./assets/home.jpg"
+import {FaLocationPin} from "react-icons/fa6"
+import {AiOutlineMail} from "react-icons/ai"
+import {FaPhone} from "react-icons/fa"
+import {FaInstagram} from "react-icons/fa6"
+import {FaYoutube} from "react-icons/fa6"
 import {Element, Link} from "react-scroll";
 export default function HomePage(props) {
+    const onSubmit = (event) => {
+        event.preventDefault(); // Prevents the page from refreshing
+
+        // Form handling logic
+        const formData = {
+            name: event.target.name.value,
+            email: event.target.email.value,
+            message: event.target.message.value
+        };
+
+        console.log("Form submitted:", formData);
+        // Additional actions (like sending data to a server)
+    };
     return (
         <div className="container-fluid">
             <div className="container-fluid p-0" id="div1">
@@ -63,7 +81,7 @@ export default function HomePage(props) {
             </div>
             <div className="container-fluid p-0 d-block" id="container">
                 <Element name="home">
-                    
+
                     <div className="first d-flex">
                         <div className="svg">
                             <svg
@@ -465,83 +483,112 @@ export default function HomePage(props) {
                 </Element>
                 <Element name="stories">
                     {/* <div className="stories container"> */}
-                            <div className="elab stories container" id='challenges'>
-                                <h1>Challenges</h1><br/>
-                                <p>E-Lab is a transformative course where we acquire essential leadership skills and practical tools to pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage closely with our communities, driving meaningful impact while fostering personal growth.</p>
-                                <div className="cards1">
-                                    <div className="card card1" style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={intro}/>
-                                        <div>
-                                            <span>1</span><br/>
-                                            <a href="https://youtu.be/fUb4aolcJ38"><h2>Introduction</h2></a>
-                                            <p>This was an opportunity to get to know one another on a deeper level, celebrating the diverse backgrounds, perspectives, and talents that each of us brings to the group.</p>
-                                        </div>
+                    <div className="elab stories container" id='challenges'>
+                        <h1>Challenges</h1><br/>
+                        <p>E-Lab is a transformative course where we acquire essential leadership skills
+                            and practical tools to pursue our missions effectively. Through hands-on
+                            challenges and collaborative projects, we engage closely with our communities,
+                            driving meaningful impact while fostering personal growth.</p>
+                        <div className="cards1">
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={intro}/>
+                                <div>
+                                    <span>1</span><br/>
+                                    <a href="https://youtu.be/fUb4aolcJ38">
+                                        <h2>Introduction</h2>
+                                    </a>
+                                    <p>This was an opportunity to get to know one another on a deeper level,
+                                        celebrating the diverse backgrounds, perspectives, and talents that each of us
+                                        brings to the group.</p>
+                                </div>
 
-                                    </div>
-                                    <div className="card card1" style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={discover}/>
-                                        <div>
-                                            <span>2</span><br/>
-                                            <a href="https://youtu.be/Irqn14-dj90?feature=shared"><h2>Discover Africa</h2></a>
-                                            <p>We delved into an exploration of the South African community. By discussing her unique social, cultural, and economic aspects, we gained insights into the opportunities.</p>
-                                        </div>
+                            </div>
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={discover}/>
+                                <div>
+                                    <span>2</span><br/>
+                                    <a href="https://youtu.be/Irqn14-dj90?feature=shared">
+                                        <h2>Discover Africa</h2>
+                                    </a>
+                                    <p>We delved into an exploration of the South African community. By discussing
+                                        her unique social, cultural, and economic aspects, we gained insights into the
+                                        opportunities.</p>
+                                </div>
 
-                                    </div>
-                                    <div className="card card1" style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={help}/>
-                                        <div>
-                                            <span>3</span><br/>
-                                            <a href="https://youtu.be/3nnDfE-y9pk"><h2>HELP-LAB</h2></a>
-                                            <p>Through the Help Lab, we provided food and other essentials to a family in need, addressing immediate hunger while learning about the broader challenges they face.</p>
-                                        </div>
+                            </div>
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={help}/>
+                                <div>
+                                    <span>3</span><br/>
+                                    <a href="https://youtu.be/3nnDfE-y9pk">
+                                        <h2>HELP-LAB</h2>
+                                    </a>
+                                    <p>Through the Help Lab, we provided food and other essentials to a family in
+                                        need, addressing immediate hunger while learning about the broader challenges
+                                        they face.</p>
+                                </div>
 
-                                    </div>
-                                    <div
-                                        className="card card1"
-                                        style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={treasure}/>
-                                        <div>
-                                            <span>4</span><br/>
-                                            <a href="https://youtu.be/Aikx02HNyiw"><h2>Hunt for Treasure</h2></a>
-                                          
-                                            <p>We had the unique opportunity to interview the mayor of Ouesso, diving into discussions on corruption its effects on local governance and how to eradicate it. </p>
-                                        </div>
+                            </div>
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={treasure}/>
+                                <div>
+                                    <span>4</span><br/>
+                                    <a href="https://youtu.be/Aikx02HNyiw">
+                                        <h2>Hunt for Treasure</h2>
+                                    </a>
 
-                                    </div>
-                                    <div
-                                        className="card card1"
-                                        style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={launch}/>
-                                        <div>
-                                            <span>5</span><br/>
-                                            <h2>Launch Your Mission</h2>
-                                            <p>We developed TAAP—an anonymous tipping platform designed to combat corruption by empowering citizens to report misconduct without fear of exposure.</p>
-                                        </div>
+                                    <p>We had the unique opportunity to interview the mayor of Ouesso, diving into
+                                        discussions on corruption its effects on local governance and how to eradicate
+                                        it.
+                                    </p>
+                                </div>
 
-                                    </div>
-                                    <div
-                                        className="card card1"
-                                        style={{
-                                        marginTop: "100px"
-                                    }}>
-                                        <img src={print}/>
-                                        <div>
-                                            <span>6</span><br/>
-                                            <h2>Digital Print</h2>
-                                            <p> We brought our vision to life. Our online presence serves as a digital platform to showcase our mission, engage with audience, and drive our message forward.</p>
-                                        </div>
+                            </div>
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={launch}/>
+                                <div>
+                                    <span>5</span><br/>
+                                    <h2>Launch Your Mission</h2>
+                                    <p>We developed TAAP—an anonymous tipping platform designed to combat corruption
+                                        by empowering citizens to report misconduct without fear of exposure.</p>
+                                </div>
 
-                                    {/* </div> */}
+                            </div>
+                            <div
+                                className="card card1"
+                                style={{
+                                marginTop: "100px"
+                            }}>
+                                <img src={print}/>
+                                <div>
+                                    <span>6</span><br/>
+                                    <h2>Digital Print</h2>
+                                    <p>
+                                        We brought our vision to life. Our online presence serves as a digital platform
+                                        to showcase our mission, engage with audience, and drive our message forward.</p>
+                                </div>
+
+                                {/* </div> */}
                             </div>
                         </div>
                     </div>
@@ -554,41 +601,92 @@ export default function HomePage(props) {
                                 <img src={Jules} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Jules Gasore</h5>
-                                    <p class="card-text" style={{fontSize:"13px"}}>Jules brings energy and insight to every ideation session, sparking innovative ideas and pushing boundaries.</p>
-                                    
+                                    <p
+                                        class="card-text"
+                                        style={{
+                                        fontSize: "13px"
+                                    }}>Jules
+                                        brings energy and insight to every ideation session, sparking innovative ideas
+                                        and pushing boundaries.</p>
+
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Shakira} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Shakira Munganyinka</h5>
-                                    <p class="card-text" style={{fontSize:"13px"}}>Shakira's optimism and resilience not only keep projects on track but also creates a supportive environment for everyone.</p>
+                                    <p
+                                        class="card-text"
+                                        style={{
+                                        fontSize: "13px"
+                                    }}>Shakira's
+                                        optimism and resilience not only keep projects on track but also creates a
+                                        supportive environment for everyone.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Youahne} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Youahne Bayimina</h5>
-                                    <p class="card-text" style={{fontSize:"13px"}}>Youahne's creative approach adds a unique spark that consistently inspires the team and elevates our work.</p>
+                                    <p
+                                        class="card-text"
+                                        style={{
+                                        fontSize: "13px"
+                                    }}>Youahne's
+                                        creative approach adds a unique spark that consistently inspires the team and
+                                        elevates our work.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Chipo} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Chipo Hameja</h5>
-                                    <p class="card-text" style={{fontSize:"13px"}}>With extensive experience, Chipo brings a global perspective and adaptability that enriches every project.</p>
-                                    
+                                    <p
+                                        class="card-text"
+                                        style={{
+                                        fontSize: "13px"
+                                    }}>With
+                                        extensive experience, Chipo brings a global perspective and adaptability that
+                                        enriches every project.</p>
+
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Beulla} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Beulla Rugero</h5>
-                                    <p class="card-text" style={{fontSize:"13px"}}>Beulla brings technical expertise and problem-solving skills to the table, using programming to streamline processes</p>
-                                    
+                                    <p
+                                        class="card-text"
+                                        style={{
+                                        fontSize: "13px"
+                                    }}>Beulla
+                                        brings technical expertise and problem-solving skills to the table, using
+                                        programming to streamline processes</p>
+
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </Element>
+                <Element name="contact">
+                    <div class="mb-3 container contact">
+                        <div></div>
+                    <form>
+                    <div class="mb-3">
+    <label for="exampleInput1" class="form-label">Full name</label>
+    <input type="text" class="form-control" id="exampleInput1"/>
+  </div> 
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
                     </div>
                 </Element>
             </div>
