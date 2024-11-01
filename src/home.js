@@ -10,6 +10,7 @@ import help from "./assets/help.jpg"
 import treasure from "./assets/treasure.jpg"
 import launch from "./assets/launch.jpg"
 import print from "./assets/digital.jpg"
+import home from "./assets/home.jpg"
 import {Element, Link} from "react-scroll";
 export default function HomePage(props) {
     return (
@@ -62,6 +63,7 @@ export default function HomePage(props) {
             </div>
             <div className="container-fluid p-0 d-block" id="container">
                 <Element name="home">
+                    
                     <div className="first d-flex">
                         <div className="svg">
                             <svg
@@ -462,13 +464,14 @@ export default function HomePage(props) {
                     </div>
                 </Element>
                 <Element name="stories">
-                    <div className="stories container">
-                        <div className="container mt-2 videos">
-                            <div className="elab" id='challenges'>
+                    {/* <div className="stories container"> */}
+                            <div className="elab stories container" id='challenges'>
                                 <h1>Challenges</h1><br/>
                                 <p>E-Lab is a transformative course where we acquire essential leadership skills and practical tools to pursue our missions effectively. Through hands-on challenges and collaborative projects, we engage closely with our communities, driving meaningful impact while fostering personal growth.</p>
                                 <div className="cards1">
-                                    <div className="card1">
+                                    <div className="card card1" style={{
+                                        marginTop: "100px"
+                                    }}>
                                         <img src={intro}/>
                                         <div>
                                             <span>1</span><br/>
@@ -477,16 +480,20 @@ export default function HomePage(props) {
                                         </div>
 
                                     </div>
-                                    <div className="card1">
+                                    <div className="card card1" style={{
+                                        marginTop: "100px"
+                                    }}>
                                         <img src={discover}/>
                                         <div>
                                             <span>2</span><br/>
                                             <a href="https://youtu.be/Irqn14-dj90?feature=shared"><h2>Discover Africa</h2></a>
-                                            <p>We delved into an exploration of the South African community. By discussing the unique social, cultural, and economic aspects of South Africa, we gained insights into the opportunities.</p>
+                                            <p>We delved into an exploration of the South African community. By discussing her unique social, cultural, and economic aspects, we gained insights into the opportunities.</p>
                                         </div>
 
                                     </div>
-                                    <div className="card1">
+                                    <div className="card card1" style={{
+                                        marginTop: "100px"
+                                    }}>
                                         <img src={help}/>
                                         <div>
                                             <span>3</span><br/>
@@ -496,9 +503,9 @@ export default function HomePage(props) {
 
                                     </div>
                                     <div
-                                        className="card1"
+                                        className="card card1"
                                         style={{
-                                        marginTop: "150px"
+                                        marginTop: "100px"
                                     }}>
                                         <img src={treasure}/>
                                         <div>
@@ -510,9 +517,9 @@ export default function HomePage(props) {
 
                                     </div>
                                     <div
-                                        className="card1"
+                                        className="card card1"
                                         style={{
-                                        marginTop: "150px"
+                                        marginTop: "100px"
                                     }}>
                                         <img src={launch}/>
                                         <div>
@@ -523,9 +530,9 @@ export default function HomePage(props) {
 
                                     </div>
                                     <div
-                                        className="card1"
+                                        className="card card1"
                                         style={{
-                                        marginTop: "150px"
+                                        marginTop: "100px"
                                     }}>
                                         <img src={print}/>
                                         <div>
@@ -534,9 +541,7 @@ export default function HomePage(props) {
                                             <p> We brought our vision to life. Our online presence serves as a digital platform to showcase our mission, engage with audience, and drive our message forward.</p>
                                         </div>
 
-                                    </div>
-
-                                </div>
+                                    {/* </div> */}
                             </div>
                         </div>
                     </div>
@@ -549,45 +554,38 @@ export default function HomePage(props) {
                                 <img src={Jules} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Jules Gasore</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text" style={{fontSize:"13px"}}>Jules brings energy and insight to every ideation session, sparking innovative ideas and pushing boundaries.</p>
+                                    
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Shakira} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Shakira Munganyinka</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text" style={{fontSize:"13px"}}>Shakira's optimism and resilience not only keep projects on track but also creates a supportive environment for everyone.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Youahne} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Youahne Bayimina</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text" style={{fontSize:"13px"}}>Youahne's creative approach adds a unique spark that consistently inspires the team and elevates our work.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Chipo} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Chipo Hameja</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text" style={{fontSize:"13px"}}>With extensive experience, Chipo brings a global perspective and adaptability that enriches every project.</p>
+                                    
                                 </div>
                             </div>
                             <div class="card">
                                 <img src={Beulla} class="card-img-top" alt="..."/>
                                 <div class="card-body">
                                     <h5 class="card-title">Beulla Rugero</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make
-                                        up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <p class="card-text" style={{fontSize:"13px"}}>Beulla brings technical expertise and problem-solving skills to the table, using programming to streamline processes</p>
+                                    
                                 </div>
                             </div>
                         </div>
